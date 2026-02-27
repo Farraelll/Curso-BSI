@@ -1,16 +1,16 @@
 # Bacharelado em Sistemas de Informação
 
-Repositório destinado ao armazenamento de materiais, exercícios e projetos desenvolvidos durante o curso de **Sistemas de Informação** no **IFES - Campus Serra** (Começando a partir do 4º período).
+Repositório destinado ao registro de exercícios e projetos desenvolvidos durante o curso de **Sistemas de Informação** no **IFES - Campus Serra** (Começando a partir do 4º período).
 
 ## Sobre o Curso
 * **Instituição:** Instituto Federal do Espírito Santo (IFES)
-* **Previsão de Conclusão:** Julho de 2028
+* **Data de Conclusão:** Julho de 2028
 * **Local:** Serra, ES - Brasil
 
 ## Projetos em Destaque
-Projetos mais relevantes desenvolvidos durante as disciplinas:
+Projetos mais complexos desenvolvidos durante as disciplinas:
 
-* **[Campeonato de Futebol](https://github.com/Farraelll/trabalhoEstruturaDeDados)**: Versão simplificado de um sistema feito em C que faz o gerenciamento de dados de um campeonato de futebol.
+* **[Campeonato de Futebol](https://github.com/Farraelll/trabalhoEstruturaDeDados)**: Um sistema simples feito em C que faz o gerenciamento de dados de um campeonato de futebol.
 
 ## Grade Curricular e Progresso
 
@@ -27,7 +27,7 @@ Projetos mais relevantes desenvolvidos durante as disciplinas:
 - [X] Programação II (90h)
 - [X] Introdução ao Cálculo (60h)
 - [X] Laboratório de Sistemas de Informação (60h)
-- [x] Informática e Sociedade (30h)
+- [x] Informática e a Sociedade (30h)
 - [X] Metodologia de Pesquisa (30h)
 
 ### 3º Período (300h)
@@ -76,4 +76,4 @@ Projetos mais relevantes desenvolvidos durante as disciplinas:
 
 ## Organização das Pastas
 Os arquivos estão organizados por pastas seguindo o padrão:
-`Periodo_N/Nome_da_Disciplina/`
+`/Nome_da_Disciplina/Atividade/Arquivos`
