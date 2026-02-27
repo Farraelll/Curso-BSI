@@ -1,6 +1,6 @@
 # Bacharelado em Sistemas de Informação
 
-Repositório destinado ao registro de exercícios e projetos desenvolvidos durante o curso de **Sistemas de Informação** no **IFES - Campus Serra** (Começando a partir do 4º período).
+Repositório destinado ao registro de exercícios e projetos desenvolvidos durante o curso de **Sistemas de Informação**, começando a partir do 4º período.
 
 ## Sobre o Curso
 * **Instituição:** Instituto Federal do Espírito Santo (IFES)
