@@ -8,7 +8,7 @@ public class Gerente extends Pessoa {
         Scanner s = new Scanner(System.in);
         System.out.print("Digite sua matricula: ");
         this.matricula = s.nextLine();
-        this.senha = "123456"; // Senha padrão definida pelo eBook
+        this.senha = "123456";
     }
 
     Gerente(String n, Data d, char s, String c, String m, String p) {
