@@ -10,7 +10,8 @@ Repositório destinado ao registro de exercícios e projetos desenvolvidos duran
 ## Projetos em Destaque
 Projetos mais complexos desenvolvidos durante as disciplinas:
 
-* **[Campeonato de Futebol](https://github.com/Farraelll/trabalhoEstruturaDeDados)**: Um sistema simples feito em C que faz o gerenciamento de dados de um campeonato de futebol.
+* **[Campeonato de Futebol](https://github.com/Farraelll/trabalhoEstruturaDeDados)**: Um sistema simples feito em C que faz o gerenciamento de dados de um campeonato de futebol. (Estruturas de dados)
+* **[Gestão de Coworking](https://github.com/Farraelll/GestaoCoworking)**: Atividade que propôs a criação de um sistema para gerenciar a locação de salas. (Orientação a Objetos)
 
 ## Grade Curricular e Progresso
 
