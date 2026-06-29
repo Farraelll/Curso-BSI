@@ -4,76 +4,64 @@
 
 #define RODADAS 3
 
-int jogada_valida(char jogada)
-{
-    return jogada == 'r' || jogada == 'p' || jogada == 't';
+int jogada_valida(char jogada) { return jogada == 'r' || jogada == 'p' || jogada == 't'; }
+
+char escolheJogada() {
+	int escolha = 1 + rand() % 3;
+
+	if (escolha == 1) { return 'r'; }
+	else if (escolha == 2) { return 'p'; }
+	else { return 't'; }
 }
 
-char escolheJogada()
-{
-    int escolha = 1 + rand() % 3;
+int main() {
+	char humano;
+	int vitorias = 0;
+	int empates = 0;
+	int derrotas = 0;
 
-    if (escolha == 1) {
-        return 'r';
-    }
-    else if (escolha == 2) {
-        return 'p';
-    }
-    else {
-        return 't';
-    }
-}
+	srand((unsigned int)time(nullptr));
 
-int main()
-{
-    char humano;
-    int vitorias = 0;
-    int empates = 0;
-    int derrotas = 0;
+	for (int c = 0; c < RODADAS; c++) {
+		printf("\nRodada %d de %d\n", c + 1, RODADAS);
+		printf("Humano, escolha pedra(r), papel(p) ou tesoura(t):\n");
 
-    srand((unsigned int)time(nullptr));
+		if (scanf(" %c", &humano) != 1) {
+			printf("Entrada inválida.\n");
+			return 1;
+		}
 
-    for (int c = 0; c < RODADAS; c++) {
-        printf("\nRodada %d de %d\n", c + 1, RODADAS);
-        printf("Humano, escolha pedra(r), papel(p) ou tesoura(t):\n");
+		if (!jogada_valida(humano)) {
+			printf("Jogada inválida. Use apenas r, p ou t.\n");
+			c--;
+			continue;
+		}
 
-        if (scanf(" %c", &humano) != 1) {
-            printf("Entrada inválida.\n");
-            return 1;
-        }
+		char maquina = escolheJogada();
 
-        if (!jogada_valida(humano)) {
-            printf("Jogada inválida. Use apenas r, p ou t.\n");
-            c--;
-            continue;
-        }
+		printf("Humano: %c\n", humano);
+		printf("Máquina: %c\n", maquina);
 
-        char maquina  = escolheJogada();
+		if (humano == maquina) {
+			printf("Empate\n");
+			empates++;
+		}
+		else if ((humano == 'r' && maquina == 'p') ||
+			(humano == 'p' && maquina == 't') ||
+			(humano == 't' && maquina == 'r')) {
+			printf("Derrota\n");
+			derrotas++;
+		}
+		else {
+			printf("Vitória\n");
+			vitorias++;
+		}
+	}
 
-        printf("Humano: %c\n", humano);
-        printf("Máquina: %c\n", maquina);
+	printf("\nRodadas: %d\n", RODADAS);
+	printf("Humano: %d\n", vitorias);
+	printf("Máquina: %d\n", derrotas);
+	printf("Empates: %d\n", empates);
 
-        if (humano == maquina) {
-            printf("Empate\n");
-            empates++;
-        }
-        else if ((humano == 'r' && maquina == 'p') ||
-                 (humano == 'p' && maquina == 't') ||
-                 (humano == 't' && maquina == 'r'))
-        {
-            printf("Derrota\n");
-            derrotas++;
-        }
-        else {
-            printf("Vitória\n");
-            vitorias++;
-        }
-    }
-
-    printf("\nRodadas: %d\n", RODADAS);
-    printf("Humano: %d\n", vitorias);
-    printf("Máquina: %d\n", derrotas);
-    printf("Empates: %d\n", empates);
-
-    return 0;
+	return 0;
 }
