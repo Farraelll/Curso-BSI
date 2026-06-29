@@ -6,11 +6,11 @@ typedef struct stacknode StackNode;
 
 Stack *s_create();
 
-char s_pop(Stack *s);
+int s_pop(Stack *s, char *valor);
 
-char s_top(Stack *s);
+int s_top(Stack *s, char *valor);
 
-void s_push(Stack *s, char v);
+int s_push(Stack *s, char v);
 
 int s_is_empty(Stack *s);
 

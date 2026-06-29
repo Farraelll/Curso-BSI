@@ -17,11 +17,11 @@ struct stacknode
 Stack *s_create()
 {
     Stack *s = (Stack *)malloc(sizeof(Stack));
-    s->top = NULL;
+    s->top = nullptr;
     return s;
 }
 
-int s_is_empty(Stack *s)
+int s_is_empty(const Stack *s)
 {
     return s->top == NULL;
 }
@@ -34,7 +34,7 @@ void s_push(Stack *s, char v)
     s->top = node;
 }
 
-char s_top(Stack *s)
+char s_top(const Stack *s)
 {
     assert(!s_is_empty(s));
     return s->top->info;
@@ -63,7 +63,7 @@ void s_free(Stack *s)
     free(s); 
 }
 
-void s_print(Stack *s)
+void s_print(const Stack *s)
 {
     for (StackNode *p = s->top; p != NULL; p = p->next)
         printf("%c ", p->info);

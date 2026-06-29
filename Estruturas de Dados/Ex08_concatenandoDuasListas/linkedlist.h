@@ -16,11 +16,11 @@ int ll_remove(LinkedList *lista, int valor);
 
 void ll_remove_all(LinkedList *lista, int valor);
 
-int ll_size(LinkedList *lista);
+int ll_size(const LinkedList *lista);
 
-int ll_is_in(LinkedList *lista, int valor);
+int ll_is_in(const LinkedList *lista, int valor);
 
-int ll_is_empty(LinkedList *lista);
+int ll_is_empty(const LinkedList *lista);
 
 int ll_is_sorted(LinkedList *lista);
 
@@ -30,8 +30,8 @@ LinkedList *ll_concatenate(LinkedList *lista1, LinkedList *lista2);
 
 void ll_free(LinkedList *lista);
 
-void ll_print(LinkedList *lista);
+void ll_print(const LinkedList *lista);
 
-LinkedList *ll_concatenated(LinkedList *lista1, LinkedList *lista2);
+LinkedList *ll_concatenated(const LinkedList *lista1, const LinkedList *lista2);
 
 #endif
