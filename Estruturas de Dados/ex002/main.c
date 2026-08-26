@@ -1,3 +1,5 @@
+// Extrai informações sobre um retângulo
+
 #include <stdio.h>
 #include <math.h>
 

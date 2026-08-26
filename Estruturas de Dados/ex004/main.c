@@ -1,3 +1,5 @@
+// Une colecoes de "quadrinhos"
+
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,3 +1,5 @@
+// Concatena duas listas (base fornecida pelo professor)
+
 #include "linkedlist.h"
 #include <stdio.h>
 

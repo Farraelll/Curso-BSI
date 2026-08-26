@@ -1,3 +1,5 @@
+// Faz divisoes de strings
+
 #include <stdio.h>
 #include <string.h>
 

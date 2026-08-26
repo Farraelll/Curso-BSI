@@ -1,3 +1,5 @@
+// Jokenpo
+
 #include <stdio.h>
 
 int jogada_valida(char jogada) { return jogada == 'r' || jogada == 'p' || jogada == 't'; }

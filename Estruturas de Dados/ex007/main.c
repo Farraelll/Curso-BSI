@@ -1,3 +1,5 @@
+// Manipulacao de vetores dinamicos
+
 #include "dynvec.h"
 #include <stdio.h>
 
